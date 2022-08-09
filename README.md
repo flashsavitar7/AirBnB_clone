@@ -1,135 +1,117 @@
-# AirBnB Clone [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/luischaparroc/AirBnB_clone/blob/master/LICENSE) [![Build Status](https://travis-ci.org/luischaparroc/AirBnB_clone.svg?branch=master)](https://travis-ci.org/luischaparroc/AirBnB_clone)
-![HBnB Logo](./image/hbnb_logo.png)
+# AirBnB Clone - The console
+the console for airbnb project. Create a command interpreter that can modify or delete the database
+The users like the administrator of the app Airbnb clone has the posibility of the manipulate objects and data of the application, this objects are:
+ 
+ * Users
+ * Places
+ * States
+ * Cities
+ * Amenities
+ * Reviews
 
 
-### Contents
-
-- [Description](#Description)
-- [Environment](#Environment)
-- [Further Information](#Furtherinformation)
-- [Requirements](#Requirements)
-- [Repo Contents](#FileContents)
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Built with](#Built-with)
-- [Acknowledgements](#Acknowledgements)
-
-## Description :page_facing_up:
-This is the first phase of a four phase project, to create a basic clone of the AirBnB web app. In this first phase a basic console was created using the Cmd Python module, to manage the objects of the whole project, being able to implement the methods create, show, update, all, and destroy to the existing classes and subclasses.
+![alt text](https://i.ibb.co/RSzZ5yh/815046647d23428a14ca.png)
 
 
-## Environment :computer:
-The console was developed in Ubuntu 14.04LTS using python3 (version 3.4.3).
-
-### Further information :bookmark_tabs:
-For further information on python version, and documentation visit [python.org](https://www.python.org/).
-
-## Requirements :memo:
-Knowledge in python3, how to use a command line interpreter, a computer with Ubuntu 14.04, python3 and pep8 style corrector.
-
-## Repo Contents :clipboard:
-This repository constains the following files:
-
-|   **File**   |   **Description**   |
-| -------------- | --------------------- |
-|[AUTHORS](./AUTHORS) | Contains info about authors of the project |
-|[base_model.py](./models/base_model.py) | Defines BaseModel class (parent class), and methods |
-|[user.py](./models/user.py) | Defines subclass User |
-|[amenity.py](./models/amenity.py) | Defines subclass Amenity |
-|[city.py](./models/city.py)| Defines subclass City |
-|[place.py](./models/place.py)| Defines subclass Place |
-|[review.py](./models/review.py) | Defines subclass Review |
-|[state.py](./models/state.py) | Defines subclass State |
-|[file_storage.py](./models/engine/file_storage.py) | Creates new instance of class, serializes and deserializes data |
-|[console.py](./console.py) | creates object, retrieves object from file, does operations on objects, updates attributes of object and destroys object |
-|[test_base_model.py](./tests/test_models/test_base_model.py) | unittests for base_model |
-|[test_user.py](./tests/test_models/test_user.py) | unittests for user |
-|[test_amenity.py](./tests/test_models/test_amenity.py) | unittests for amenity |
-|[test_city.py](./tests/test_models/test_city.py) | unittests for city |
-|[test_place.py](./tests/test_models/test_place.py) | unittests for place |
-|[test_review.py](./tests/test_models/test_review.py) | unittests for review |
-|[test_state.py](./tests/test_models/test_state.py) | unittests for state |
-|[test_file_storage.py](./tests/test_models/test_engine/test_file_storage.py) | unittests for file_storage |
-|[test_console.py](./tests/test_console.py) | unittests for console |
+## Requirements
 
 
-## Installation :hammer_and_wrench:
-Clone the repository and run the console.py
-```
-$ git clone https://github.com/------/AirBnB_clone.git
-```
+## Python Scripts
 
-## Usage :wrench:
+    Allowed editors: vi, vim, emacs
+    All your files will be interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3)
+    All your files should end with a new line
+    The first line of all your files should be exactly #!/usr/bin/python3
+    A README.md file, at the root of the folder of the project, is mandatory
+    Your code should use the PEP 8 style (version 1.7 or more)
+    All your files must be executable
+    The length of your files will be tested using wc
+    All your modules should have a documentation (python3 -c 'print(__import__("my_module").__doc__)')
+    All your classes should have a documentation (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
+    All your functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
 
-|   **Method**   |   **Description**   |
-| -------------- | --------------------- |
-|[create](./console.py) | Creates object of given class |
-|[show](./console.py) | Prints the string representation of an instance based on the class name and id |
-|[all](./console.py) | Prints all string representation of all instances based or not on the class name |
-|[update](./console.py) | Updates an instance based on the class name and id by adding or updating attribute (save the change into the JSON file) |
-|[destroy](./console.py)| Deletes an instance based on the class name and id (save the change into the JSON file) |
-|[count](./console.py)| Retrieve the number of instances of a class |
-|[help](./console.py)| Prints information about specific command |
-|[quit/ EOF](./console.py)| Exit the program |
+## Python Unit Tests
 
-###### Example No.1
+    Allowed editors: vi, vim, emacs
+    All your files should end with a new line
+    All your test files should be inside a folder tests
+    You have to use the unittest module
+    All your test files should be python files (extension: .py)
+    All your test files and folders should start by test_
+    Your file organization in the tests folder should be the same as your project
+    e.g., For models/base_model.py, unit tests must be in: tests/test_models/test_base_model.py
+    e.g., For models/user.py, unit tests must be in: tests/test_models/test_user.py
+    All your tests should be executed by using this command: python3 -m unittest discover tests
+    You can also test file by file by using this command: python3 -m unittest tests/test_models/test_base_model.py
+    All your modules should have a documentation (python3 -c 'print(__import__("my_module").__doc__)')
+    All your classes should have a documentation (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
+    All your functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
+    We strongly encourage you to work together on test cases, so that you don’t miss any edge 
+ 
+ 
+## Installation
+ 
+ For use this console you need to have:
+ * Linux ubuntu 14.04.3 LTS or higger
+ * Python 3.7 or higger
+
+## Files
+
+
+
+ -  HBNHCommand: console.py
+ -  Amenity: models/amenity.py
+ -  BaseModel: models/base_model.py
+ -  City: models/city.py
+ -  models.init : models/__init__.py
+ -  Place: models/place.py
+ -  Review: models/review.py
+ -  State: models/state.py
+ -  User: models/user.py
+ -  FileStorage: models/engine/file_storage.py
+ -  engine.init: models/engine/__init__.py
 
 ```
-➜  AirBnB_clone git:(feature) ✗ ./console.py
-(hbnb) create User
-bb4f4b81-7757-460b-9263-743c9ea6fef6
-(hbnb) show User bb4f4b81-7757-460b-9263-743c9ea6fef6
-[User] (bb4f4b81-7757-460b-9263-743c9ea6fef6) {'updated_at': datetime.datetime(2019, 11, 13, 17, 7, 45, 492139), 'id': 'bb4f4b81-7757-460b-9263-743c9ea6fef6', 'created_at': datetime.datetime(2019, 11, 13, 17, 7, 45, 492106)}
-(hbnb) all User
-["[User] (bb4f4b81-7757-460b-9263-743c9ea6fef6) {'updated_at': datetime.datetime(2019, 11, 13, 17, 7, 45, 492139), 'id': 'bb4f4b81-7757-460b-9263-743c9ea6fef6', 'created_at': datetime.datetime(2019, 11, 13, 17, 7, 45, 492106)}"]
-(hbnb) update User bb4f4b81-7757-460b-9263-743c9ea6fef6 name Betty
-['User', 'bb4f4b81-7757-460b-9263-743c9ea6fef6', 'name', 'Betty']
-(hbnb) all User
-["[User] (bb4f4b81-7757-460b-9263-743c9ea6fef6) {'updated_at': datetime.datetime(2019, 11, 13, 17, 7, 45, 492139), 'id': 'bb4f4b81-7757-460b-9263-743c9ea6fef6', 'name': 'Betty', 'created_at': datetime.datetime(2019, 11, 13, 17, 7, 45, 492106)}"]
-(hbnb) destroy User bb4f4b81-7757-460b-9263-743c9ea6fef6
-(hbnb) all User
-[]
-(hbnb) show User
-** instance id missing **
+How To run the command interpreter:
+```
+$ ./console.py
+
+
+## Examples
+
+Interactive mode:
+```
+$ ./console.py
+(hbnb) help
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
 (hbnb)
-
-```
-
-###### Example No.2
-
-```
-➜  AirBnB_clone git:(feature) ✗ ./console.py
-(hbnb) User.create
-*** Unknown syntax: User.create
-(hbnb) User.create()
-e6ee5344-04ef-454d-84e4-ba6fc613f1b4
-(hbnb) User.all()
-["[User] (e6ee5344-04ef-454d-84e4-ba6fc613f1b4) {'id': 'e6ee5344-04ef-454d-84e4-ba6fc613f1b4', 'updated_at': datetime.datetime(2019, 11, 13, 17, 14, 1, 963404), 'created_at': datetime.datetime(2019, 11, 13, 17, 14, 1, 963373)}"]
-(hbnb) User.show()
-** instance id missing **
-(hbnb) User.show(e6ee5344-04ef-454d-84e4-ba6fc613f1b4)
-[User] (e6ee5344-04ef-454d-84e4-ba6fc613f1b4) {'id': 'e6ee5344-04ef-454d-84e4-ba6fc613f1b4', 'updated_at': datetime.datetime(2019, 11, 13, 17, 14, 1, 963404), 'created_at': datetime.datetime(2019, 11, 13, 17, 14, 1, 963373)}
-(hbnb) User.update("e6ee5344-04ef-454d-84e4-ba6fc613f1b4", "name", "Betty")
-['User', '"e6ee5344-04ef-454d-84e4-ba6fc613f1b4"', '"name"', '"Betty"']
-(hbnb) User.all()
-['[User] (e6ee5344-04ef-454d-84e4-ba6fc613f1b4) {\'"name"\': \'"Betty"\', \'id\': \'e6ee5344-04ef-454d-84e4-ba6fc613f1b4\', \'updated_at\': datetime.datetime(2019, 11, 13, 17, 14, 1, 963404), \'created_at\': datetime.datetime(2019, 11, 13, 17, 14, 1, 963373)}']
-(hbnb) User.destroy(e6ee5344-04ef-454d-84e4-ba6fc613f1b4)
-(hbnb) User.all()
-[]
+(hbnb)
 (hbnb) quit
-➜  AirBnB_clone git:(feature) ✗
-
+$
+```
+Non-interactive mode:
+```
+$ echo "help" | ./console.py
+(hbnb)
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb)
+$
 ```
 
-## Built with :gear:
-python3 (3.4.3)
-
-### Version :pushpin:
-HBnB - version 9.6
-
-### Acknowledgements :raised_hands:
-To all the peers that contribuited with their knowledge
-
-### Authors :fountain_pen:
-* Luis Chaparro - @luischaparroc
-* Laura Peralta V - @LauraPeraltaV85
+## AUTHORS
+ 
+* **Triumph Edet**
